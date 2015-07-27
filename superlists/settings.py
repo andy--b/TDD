@@ -1,3 +1,4 @@
+#!python3
 """
 Django settings for superlists project.
 
