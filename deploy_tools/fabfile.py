@@ -1,6 +1,6 @@
 from fabric.contrib.files import append, exists, sed
 from fabric.api import env, local, run
-import randon
+import random
 
 REPO_URL = 'https://github.com/andy--b/TDD-superlists.git'
 
