@@ -2,6 +2,10 @@ from fabric.contrib.files import append, exists, sed
 from fabric.api import env, local, run
 import random
 
+env.hosts = ['54.148.248.239']
+env.user = 'ubuntu'
+env.key_filename = '~/.ssh/authorized_keys'
+
 REPO_URL = 'https://github.com/andy--b/TDD-superlists.git'
 
 def deploy():
