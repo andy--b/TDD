@@ -1,6 +1,9 @@
 from fabric.contrib.files import append, exists, sed
 from fabric.api import env, local, run
+from fabric.network import ssh
 import random
+
+ssh.util.log_to_file("paramiko.log", 10)
 
 REPO_URL = 'https://github.com/andy--b/TDD-superlists.git'
 
